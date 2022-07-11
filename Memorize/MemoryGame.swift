@@ -7,6 +7,7 @@
 
 import Foundation
 
+// In generics or “don’t care types” the “==” cannot be used. Therefore they should be set to Equatable.
 struct MemoryGame<CardContent> where CardContent: Equatable {
 
     private(set) var cards: Array<Card>

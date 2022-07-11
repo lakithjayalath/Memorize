@@ -35,7 +35,7 @@ class EmojiMemoryGame: ObservableObject {
     // private(set) - other classes and structs can look at the model but can't change it
     // @Published - anytime the model changes it will automatically announce it
     @Published private var model: MemoryGame<String> = createMemoryGame()
-    
+
     // because the view needs to see the model or the cards to make them while keeping the model private
     var cards: Array<MemoryGame<String>.Card> {
         return model.cards
